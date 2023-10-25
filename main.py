@@ -1,4 +1,4 @@
-def encode(input):
+def encode(input):  # Encode Function added by Tyler
     new_string = ""
     for i in input:
         if int(i) < 7:
