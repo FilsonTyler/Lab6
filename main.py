@@ -10,9 +10,21 @@ def encode(input):  # Encode Function added by Tyler
         elif i == "9":
             new_string += "2"
     return new_string
+ 
+def decode(input):               #Decode Function added by Alexander
+    new_string = ""
+    for i in input:
+        if int(i) > 2:
+            new_string += str(int(i)-3)
+        elif i == "0":
+            new_string += "7"
+        elif i == "1":
+            new_string += "8"
+        elif i == "2":
+            new_string += "9"
+    return new_string
 
 
-# Add def decode here
 
 
 if __name__ == "__main__":  # Main function added by Tyler
