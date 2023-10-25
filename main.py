@@ -1,3 +1,20 @@
+def encode(input):
+    new_string = ""
+    for i in input:
+        if int(i) < 7:
+            new_string += str(int(i)+3)
+        elif i == "7":
+            new_string += "0"
+        elif i == "8":
+            new_string += "1"
+        elif i == "9":
+            new_string += "2"
+    return new_string
+
+
+# Add def decode here
+
+
 if __name__ == "__main__":  # Main function added by Tyler
     stored_password = None
     while True:
